@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "All Rights Reserved"
+issueTrackerURL = ""
+
+[[mods]]
+modId = "cutscenemod"
+version = "${version}"
+displayName = "Cutscene & Song Mod"
+authors = "You"
+description = '''
+มอดสำหรับเปิดคัตซีนวิดีโอ (mp4) เต็มจอให้ผู้เล่น พร้อมระบบข้ามคัตซีนด้วยการกดค้าง Space
+และระบบเปิด/หยุดเพลงพื้นหลังจากไฟล์ config ฝั่ง client
+'''
+
+[[dependencies.cutscenemod]]
+    modId = "forge"
+    mandatory = true
+    versionRange = "[47,)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.cutscenemod]]
+    modId = "minecraft"
+    mandatory = true
+    versionRange = "[1.20.1,1.20.2)"
+    ordering = "NONE"
+    side = "BOTH"
